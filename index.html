@@ -1,0 +1,690 @@
+<!-- ACCORDION START -->
+
+<style>
+.hero-bg{
+  position:relative;
+  padding:60px 20px;
+}
+
+.hero-bg::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-image:url("https://polska-org.pl/foto/3503/Widoki_ze_schroniska_Biala_Woda_3503700.jpg");
+  background-size:cover;
+  background-position:center;
+  opacity:0.7;
+  z-index:0;
+}
+
+.accordion-container{
+  position:relative;
+  z-index:1;
+  max-width:900px;
+  margin:auto;
+  font-family:Georgia, serif;
+}
+
+.accordion{
+  background:white;
+  margin-bottom:10px;
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
+
+.accordion-header{
+  padding:18px 20px;
+  font-size:22px;
+  font-weight:bold;
+  cursor:pointer;
+  background:#f2f2f2;
+}
+
+.accordion-header:hover{
+  background:#e5e5e5;
+}
+
+.accordion-content{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.4s ease;
+  padding:0 20px;
+  background:white;
+}
+
+.accordion-content-inner{
+  padding:20px 0;
+}
+</style>
+
+<div class="hero-bg">
+
+  <div class="accordion-container">
+
+    <!-- WSTĘP -->
+    <div class="accordion">
+      <div class="accordion-header">Wstęp</div>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <p>
+          Rozpoczynamy dwudniową wędrówkę po urokliwych zakątkach Marianówki (wcz. Mariendorf), Międzygórza (wcz. Wölfelsgrund), Marcinkowa (wcz. Martinsberg), Konradowa (wcz. Konradswalde), Rogóżki (wcz. Wolmsdorf), Białej Wody (wcz. Weisswasser) i okolic.
+          </p>
+          <p>
+          Aby uprzyjemnić Wam wędrówkę i uczynić ją jeszcze bardziej interesującą, przygotowałem dla Was przewodnik, który pozwoli na bieżąco śledzić odwiedzane miejsca i obiekty.
+          </p>
+          <p>
+          W tym roku nie planujemy wielu wymagających podejść — naszą bazę mamy na wysokości około 500 m n.p.m., a najwyższy punkt, który odwiedzimy, w rejonie Przełęczy Puchaczówka, sięga 915 m n.p.m. Nie będzie więc stromych wspinaczek ani typowo górskich trudności (no, może poza podejściem na Igliczną, które potrafi zmęczyć). Zamiast tego skupimy się na odkrywaniu ciekawych, tajemniczych, zapomnianych, a jednocześnie niezwykle malowniczych miejsc.
+          </p>
+
+          <div style="border:2px solid #004aad; background-color:#e6f0ff; padding:15px 20px; border-radius:6px; margin:15px 0;">
+            <p>Do bardzo wielu obiektów opisywanych w przewodniku dodałem linki, które odsyłają do dodatkowych informacji na ich temat. Najczęściej są to strony zawierające bogaty materiał ikonograficzny, ale także mapy, artykuły prasowe i naukowe, niemieckie księgi adresowe, przedwojenne spisy mieszkańców oraz inne wartościowe treści. Wszystko to ma pomóc Ci lepiej poznać okolicę i — obok walorów krajobrazowych — docenić również niezwykle bogatą historię tego miejsca. (Wszystkie linki otwierają się w nowej karcie).</p>
+          </div>
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+<!-- Miniaturka + Lightbox -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/Grafschaft_Glatz-1939_3-strony.jpg"
+       alt="Grafschaft Glatz 1939"
+       onclick="openLightbox(this)"
+       style="width:200px; max-width:80%; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()" style="
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.9);
+  text-align:center;
+">
+  <img id="lightbox-img" style="
+    margin-top:5%;
+    max-width:90%;
+    max-height:90%;
+    border-radius:6px;
+  ">
+</div>
+
+<script>
+function openLightbox(img){
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
+
+<!-- Sekcja map z linkami -->
+
+<p>
+Poniżej znajduje się zbiór przedwojennych oraz polskich map terenów, które będziemy odwiedzać. Wycinki z tych map będziemy oglądać przy okazji odwiedzin w konkretnych miejscach.
+<em>(Pliki z mapami są dość duże, mapy mogą się chwilkę otwierać.)</em>
+</p>
+
+<ul>
+  <li>Konradów 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5666_Ullersdorf_1938_uniberk_C056984531.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Konradów 1927 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5666_Ullersdorf_ca1927_BCUWr7231-32296-45397.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Na południe od Konradowa 1940 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5766_Wolfelsdorf_1940.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Na południe od Konradowa 1919 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5766_Woelfelsdorf_1919_BCUWr7231-32098-45377.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Na północ od Międzygórza 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/075K_Sudetenland/Sudentelnades_75K_3857_Glatz_1938.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa ogólna ziemi kłodzkiej 1948 r. – <a href="http://maps.mapywig.org/m/Polish_maps/various/Topographic_and_tourist_maps/KOTLINA_KLODZKA_I_GORY_PRZYLEGLE_100K_1948.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Piękna mapa całej okolicy z 1884 r. – <a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5766_(3341)_Woelfelsdorf_1884_vnnxVt7m_BN_Sygn.ZZK_S-31_206_A.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa hrabstwa z lat 20. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/KARTE_der_GRATSCHAFT_GLATZ_125K.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa Briegera z lat 30. XX w. – <a href="http://maps.mapywig.org/m/German_maps/various/Topographic_and_tourist_maps/Briegers_Wegekarte_der_Graftschaft_Glatz_75K.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1932 r. – <a href="http://maps.mapywig.org/m/German_maps/series/100K_KDR_Kreiskarten/Graftschaft_Glatz_100K_RfL_1932.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Mapa całego regionu z 1938 r. – <a href="http://maps.mapywig.org/m/German_maps/series/075K_Sudetenland/Sudentelnades_75K_3857_Glatz_1938.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+
+<h4>Mapy sztabowe WP:</h4>
+<ul>
+  <li>Marcinków, Konradów, Rogóżka, Biała Woda 1959 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-B-a_(STRONIE_SLASKIE)_1959.jpg" target="_blank">Zobacz mapę</a></li>
+  <li>Marianówka 1959 r. – <a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-A-b_(BYSTRZYCA_KLODZKA)_1959.jpg" target="_blank">Zobacz mapę</a></li>
+</ul>
+
+<p>
+Polecam też świetne narzędzie, jakim jest mapa Google, na którą nałożono mapy historyczne. Do wyboru mamy <a href="https://visitglacensis.pl/dawne-mapy-i-nazwy-20" target="_blank">mapę hrabstwa z 1881 r. lub Messtichblatt z 1940 r.</a>
+</p>
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+<!-- Sekcja artykuły A. Latocha -->
+
+<p>
+Podczas naszych spacerów wiele uwagi poświęcimy opuszczonym i wymierającym wsiom oraz osadom. Proces ich zanikania w sposób szczegółowy opisuje 
+A. Latocha w swoim artykule z 2017 r. pt.: 
+<a href="https://rcin.org.pl/igipz/Content/65999/WA51_85008_r2017-t48_SOW-Latocha.pdf" target="_blank">“Odradzanie wsi? Przemiany ludnościowo-osadnicze na ziemi kłodzkiej w okresie powojennym”</a>.
+Na stronie 33 autorka prezentuje tabelę, która ukazuje porażającą skalę tego zjawiska.
+</p>
+
+<p>
+Zainteresowanym tematem polecam też artykuł tej autorki z roku 2013 pt.: 
+<a href="https://rcin.org.pl/Content/35476/WA51_53128_r2013-t85-z3_Przeg-Geogr-Latocha.pdf" target="_blank">“Wyludnione wsie w Sudetach. I co dalej?”</a>, z mapą omawianego terenu i zaznaczonymi miejscowościami, które odwiedzimy podczas obu naszych spacerów.
+</p>
+
+
+<p>
+Polecam lekturę powyższych pozycji, bo wiele mówią o historii i aktualnej sytuacji miejsc, które nawiedzamy.
+</p>
+
+
+
+
+
+
+<!-- Miniaturki -->
+<div style="text-align:center; margin:20px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/ngfhjftgjhhy.png"
+       onclick="openLightbox(0)"
+       style="width:180px; max-width:45%; cursor:pointer; border-radius:6px;">
+
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/kkloo.png"
+       onclick="openLightbox(1)"
+       style="width:180px; max-width:45%; cursor:pointer; border-radius:6px;">
+
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" style="
+  display:none;
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  text-align:center;
+">
+
+  <!-- zamykanie -->
+  <span onclick="closeLightbox()" style="
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+  ">&times;</span>
+
+  <!-- strzałki -->
+  <span onclick="prevImage()" style="
+    position:absolute;
+    top:50%;
+    left:20px;
+    font-size:50px;
+    color:white;
+    cursor:pointer;
+    user-select:none;
+  ">&#10094;</span>
+
+  <span onclick="nextImage()" style="
+    position:absolute;
+    top:50%;
+    right:20px;
+    font-size:50px;
+    color:white;
+    cursor:pointer;
+    user-select:none;
+  ">&#10095;</span>
+
+  <!-- obraz -->
+  <img id="lightbox-img" style="
+    margin-top:5%;
+    max-width:90%;
+    max-height:90%;
+    border-radius:6px;
+  ">
+
+</div>
+
+<script>
+const images = [
+  "https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/ngfhjftgjhhy.png",
+  "https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/kkloo.png"
+];
+
+let currentIndex = 0;
+
+function openLightbox(index){
+  currentIndex = index;
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = images[currentIndex];
+}
+
+function closeLightbox(){
+  document.getElementById("lightbox").style.display = "none";
+}
+
+function nextImage(){
+  currentIndex = (currentIndex + 1) % images.length;
+  document.getElementById("lightbox-img").src = images[currentIndex];
+}
+
+function prevImage(){
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  document.getElementById("lightbox-img").src = images[currentIndex];
+}
+
+/* STRZAŁKI NA KLAWIATURZE */
+document.addEventListener("keydown", function(e){
+  if(document.getElementById("lightbox").style.display === "block"){
+    if(e.key === "ArrowRight") nextImage();
+    if(e.key === "ArrowLeft") prevImage();
+    if(e.key === "Escape") closeLightbox();
+  }
+});
+
+/* SWIPE NA TELEFONIE */
+let startX = 0;
+
+document.getElementById("lightbox").addEventListener("touchstart", e=>{
+  startX = e.touches[0].clientX;
+});
+
+document.getElementById("lightbox").addEventListener("touchend", e=>{
+  let endX = e.changedTouches[0].clientX;
+  
+  if(startX - endX > 50){
+    nextImage(); // swipe w lewo
+  } else if(endX - startX > 50){
+    prevImage(); // swipe w prawo
+  }
+});
+</script>
+
+
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+<p>
+Przemierzając zaplanowane trasy i poznając historię odwiedzanych miejsc, wiele wątków będzie związanych z kościołami, parafiami oraz miejscowym duchowieństwem (taka już specyfika ziemi kłodzkiej). Warto w tym kontekście podkreślić, że ziemia kłodzka — w przeciwieństwie do sąsiednich regionów — nigdy nie uległa masowej protestantyzacji. Hrabstwo kłodzkie przez stulecia zachowało swoją katolicką tożsamość, nawet w okresach, gdy na leżącym za miedzą Śląsku (nie mówiąc już o terenach dalej na zachód) wyznanie protestanckie zdecydowanie dominowało a ewangelicy sprawowali władzę, piastowali urzędy i korzystali ze szczególnych przywilejów. 
+Doskonale ilustruje to <a href="http://maps.mapywig.org/m/German_maps/various/Ravensteins_Atlas_des_Deutschen_Reiches_1883/Ravensteins_Atlas_des_Deutschen_Reiches_1883_page53.jpg" target="_blank">ta oto mapa z 1883 r., prezentująca strukturę wyznaniową ludności ówczesnych Niemiec</a>.
+</p>
+
+<p>
+To właśnie dzięki tej odrębności wyznaniowej do dziś możemy podziwiać charakterystyczne dla tego obszaru liczne kapliczki słupowe i domkowe, przydrożne krzyże, figury maryjne oraz rzeźby innych świętych, które trwale wpisały się w krajobraz ziemi kłodzkiej.
+</p>
+
+<p>
+Co zaskakujące zwierzchnikiem Kościoła katolickiego na ziemi kłodzkiej przez ok. 1000 lat był biskup Pragi. Od X w. aż do 28 czerwca 1972 r. tereny te były częścią archidiecezji w Pradze 
+(<a href="https://upload.wikimedia.org/wikipedia/commons/3/38/%C4%8Cesk%C3%A9_diec%C3%A9ze_1400.jpg" target="_blank">dla przykładu mapa ilustrująca podział terytorialny Kościoła czeskiego w XIV w.</a>).
+Czasy się zmieniały, ziemia kłodzka przechodziła w ręce różnych władców, ale przez wieki nie wychodziła spod jurysdykcji biskupa Pragi. Jednak oddalenie od centrali rodziło trudności natury organizacyjnej. W związku z tym już w średniowieczu utworzono tu odrębny dekanat, taką “wice-diecezję”. Wynikało to z oddzielnej przynależności kościelnej i specyfiki terytorium, które wymagało samodzielnego zarządzania duszpasterskiego. Z czasem, zwłaszcza po przejściu ziemi kłodzkiej pod panowanie pruskie w XVIII w., rola dziekana kłodzkiego znacznie wzrosła — stał się on faktycznym reprezentantem arcybiskupa praskiego. W 1789 r. dziekan kłodzki otrzymał rangę archidiakona a nawet prawo noszenia insygniów biskupich, co podkreślało jego wyjątkową pozycję i szerokie kompetencje na tym obszarze.
+</p>
+
+<p>
+Na początku lat 30. XX w. rangę wielkiego dziekana kłodzkiego i generalnego wikariusza arcybiskupa praskiego dla hrabstwa kłodzkiego pełnił 
+<a href="https://pl.wikipedia.org/wiki/Franz_Dittert" target="_blank">ks. prałat Franz Dittert z Międzylesia</a> (więcej opowiemy o nim przy okazji sobotniego spaceru). Właśnie wtedy, w ramach negocjacji konkordatowych, prowadzono gorące dyskusje nad możliwymi zmianami terytorialnymi diecezji na tym obszarze. Kler kłodzki zdecydowanie sprzeciwiał się jednak przyłączeniu do diecezji wrocławskiej, podkreślając, że każda inna decyzja byłaby do przyjęcia — byle tylko nie znaleźć się w strukturach wrocławskiej kurii. W tej sytuacji ks. Dittert zwrócił się do praskiego arcybiskupa Františka Kordača z prośbą o pozostawienie hrabstwa kłodzkiego – ze względów historycznych – w granicach archidiecezji praskiej lub o utworzenie odrębnej „diecezji kłodzkiej”. Swoje stanowisko Dittert przedstawił osobiście także nuncjuszowi apostolskiemu Eugenio Pacellemu podczas jego pobytu w Berlinie.
+</p>
+
+<p style="font-size:0.85em; color:#555;">
+za: Dieter Pohl: <em>Die Chronik der katholischen Stadtpfarrkirche zu Glatz, geführt von den Stadtpfarrern Prälat Augustin Skalitzky (1906–1921) und Prälat Dr. Franz Monse (1921–1946)</em>. Kolonia, 2009, s. 244.
+</p>
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+<p>
+Gdyby komuś z Was (w pierwszy bądź drugi dzień wędrowania) udało się natknąć w lesie na kamienny słupek oznaczający granicę obrębów leśnych – sprawdźcie numer, jaki na nim widnieje. Być może numer ten będzie zgadzał się z ewidencją przedstawioną na poniższej mapie. To 
+<a href="https://www.szukajwarchiwach.gov.pl/jednostka/-/jednostka/29096981" target="_blank">mapa z 1897 r. przedstawiająca zasoby i gospodarkę leśną nadleśnictwa Ullersdorf (Ołdrzychowice Kł.)</a>, należącego wówczas do hrabiego Magnisa.
+</p>
+
+
+<!-- Miniaturka mapy – LIGHTBOX -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/main/zdjecia/82_147_0_5_817_82591995-809x1024.jpg"
+       alt="Mapa Ullersdorf 1897"
+       onclick="openLightbox(this)"
+       style="width:200px; max-width:80%; cursor:pointer; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- PIĄTEK -->
+    <div class="accordion">
+      <div class="accordion-header">Piątek</div>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <!-- TU WSTAWIASZ FRAGMENTY DOTYCZĄCE PIĄTKU -->
+
+
+<!-- Pojedyncze zdjęcie poziome nad tekstem -->
+<div style="text-align:center; margin:20px 0;">
+  <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-10-195024-1024x344.png" 
+       alt="Zdjęcie poziome" 
+       style="width:100%; max-width:900px; height:250px; object-fit:cover; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+</div>
+
+
+<p>
+Naszą piątkową wędrówkę rozpoczynamy w Marianówce. To także nasza baza noclegowa. Na poniższych mapkach (jedna jest wycinkiem 
+<a href="http://maps.mapywig.org/m/German_maps/series/025K_TK25/5766_Woelfelsdorf_1919_BCUWr7231-32098-45377.jpg" target="_blank">mapy z roku 1919</a>, druga 
+<a href="http://maps.mapywig.org/m/Polish_maps/series_PRL/025_SGWP/M-33-70-A-b_(BYSTRZYCA_KLODZKA)_1959.jpg" target="_blank">mapy sztabowej WP z roku 1959</a>) 
+zaznaczyłem na czerwono nasz nocleg. Niebieską pętlą otoczyłem całe osiedle wiejskich domków w pobliżu naszego ośrodka, z których nie zostało niemal nic, poza przysłowiowym kamieniem na kamieniu porośniętym młodymi drzewkami (można porównać gęstość zabudowy w roku 1919, 40 lat później i obecnie). Różowa strzałka to kierunek naszego marszu w kierunku Iglicznej.
+</p>
+
+<!-- Miniaturki map – klikalne, otwierają powiększenie w nowej karcie -->
+<div style="text-align:center; margin:20px 0;">
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-08-184432.png" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-08-184432.png" 
+         alt="Mapa Marianówka 1919" 
+         style="width:250px; max-width:45%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); margin:5px;">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-10-140452.png" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-10-140452.png" 
+         alt="Mapa Marianówka 1959" 
+         style="width:250px; max-width:45%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2); margin:5px;">
+  </a>
+</div>
+
+
+<div style="border:2px solid #c62828; background-color:#fdecea; padding:15px 20px; border-radius:6px; margin:15px 0;">
+<p style="margin:0;">
+Dzisiejsza trasa przedstawia się następująco:<br>
+Marianówka → żółtym szlakiem podejście pod Igliczną → sanktuarium Maria Śnieżna → zejście zielonym szlakiem na zaporę w Międzygórzu → wodospad Wilczki → atrakcje Międzygórza → dawny cmentarz ewangelicki na Górze Parkowej → żółtym szlakiem powrót na parking pod Igliczną (via Ogród Bajek) → z parkingu czerwonym szlakiem zejście do Marianówki.
+</p>
+</div>
+
+<!-- Miniaturka prowadząca do mapy -->
+<div style="text-align:center; margin:20px 0;">
+  <a href="https://mapa-turystyczna.pl/route/1eajj#50.24231/16.74797/14" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Zrzut-ekranu-2026-01-10-141553-150x150.png" 
+         alt="Mapa trasy" 
+         style="width:150px; height:150px; object-fit:cover; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+</div>
+
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+
+
+<p>
+<strong>MARIANÓWKA</strong><br>
+<a href="https://polska-org.pl/504566,Marianowka.html" target="_blank">Marianówka</a> powstała w roku 1796 (data ta jest o tyle znacząca, że było to kilka lat po powstaniu ośrodka pielgrzymkowego Maria Schnee na Górze Iglicznej), na wydzielonych gruntach majątku idzikowskiego. Spore znaczenie dla rozwoju wsi miała obsługa pielgrzymów idących na Igliczną. Pod koniec XIX wieku Marianówka rozwinęła się jako miejscowość letniskowa. W roku 1900 połączyły się dwie części: Marienau i Neudorf tworząc Mariendorf. Po roku 1945 wieś była znacznie słabiej zaludniona, ale utrzymała charakter rolniczo-letniskowy.
+</p>
+
+<p>
+Na poniższych zdjęciach widzicie panoramy wsi. Zwróćcie uwagę na oznaczenie atelier fotograficznego “Marx”. 
+<a href="https://polska-org.pl/7179368,Klodzko,Zdjecia_Georga_Marxa.html" target="_blank">Georg Marx (1887–1971)</a> to fotograf, który wykonał niezliczoną liczbę zdjęć i pocztówek z terenu Śląska i ziemi kłodzkiej. 
+Tylko skatalogowanych pocztówek Marxa znamy grubo ponad 3 tysiące. Jeśli kiedykolwiek będziecie przeglądać archiwalne zdjęcia hrabstwa kłodzkiego, na pewno natkniecie się na jego pocztówki. Pan Grzegorz doczekał się nawet swojego 
+<a href="https://www.facebook.com/PhotoMarxGlatz" target="_blank">peja na FB – szczerze polecam</a>.
+</p>
+
+
+<!-- Większe miniaturki panoram – klikalne -->
+<div style="text-align:center; margin:20px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Panoramy_i_widoki_Marianowki_Marianowka_5656278-1024x651.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Panoramy_i_widoki_Marianowki_Marianowka_5656278-1024x651.jpg"
+         alt="Panorama Marianówki"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_8058798-1024x655.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_8058798-1024x655.jpg"
+         alt="Ośrodek Sorrento"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Panoramy_i_widoki_Idzikowa_Idzikow_5667375-1024x659.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Panoramy_i_widoki_Idzikowa_Idzikow_5667375-1024x659.jpg"
+         alt="Panorama Idzikowa"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+</div>
+
+<br><br>
+
+
+<p>
+Ruszamy w kierunku Iglicznej, po prawej mijamy figurę maryjną z XIX w. a po chwili bazę harcerską, przedwojenną szkołę. 
+Dom wypoczynkowy Sorrento to dawny 
+<a href="https://polska-org.pl/4709621,Marianowka,Osrodek_wczasowy_Sorrento.html" target="_blank">Gasthaus zur Spitzbergsruh</a>, 
+przedstawiony na poniższych fotografiach (na jednej z reklam – z 1909 r. – polecam zwrócić uwagę na zapis: „każdy pan otrzymuje zaliczkowo jedną markę na poczet konsumpcji”).
+</p>
+
+
+<!-- Miniaturki zdjęć Sorrento – klikalne -->
+<div style="text-align:center; margin:20px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_11975717.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_11975717.jpg"
+         alt="Sorrento 1"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_11975655.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Osrodek_wczasowy_Sorrento_Marianowka_11975655.jpg"
+         alt="Sorrento 2"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_3243554-1024x674.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_3243554-1024x674.jpg"
+         alt="Igliczna i okolice"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+</div>
+
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+
+<p>
+<strong>IGLICZNA / MARIA ŚNIEŻNA</strong>
+</p>
+
+<p>
+Trzymając się żółtego szlaku, wiodącego momentami stromo pod górę, dotarliśmy do 
+<a href="https://pl.wikipedia.org/wiki/Sanktuarium_Matki_Bo%C5%BCej_Przyczyny_Naszej_Rado%C5%9Bci_%E2%80%9EMaria_%C5%9Anie%C5%BCna%E2%80%9D" target="_blank">
+Sanktuarium Matki Bożej Przyczyny Naszej Radości „Maria Śnieżna”,</a>
+powszechnie nazywanego sanktuarium Marii Śnieżnej na Iglicznej (niem. Kirche Maria Schnee). Początki tego wyjątkowego miejsca sięgają połowy XVIII wieku. W 1776 roku wzniesiono tu niewielką drewnianą kaplicę, która jednak szybko okazała się zbyt mała dla rosnącej liczby pielgrzymów. Już kilka lat później, w 1782 roku, powstał barokowy kościół, który możemy podziwiać do dziś.
+</p>
+
+
+<!-- Galeria Igliczna – klikalne miniaturki -->
+<div style="text-align:center; margin:20px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Gospodarstwo_Bartscha_dawne_Gora_Igliczna_osada_118501.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Gospodarstwo_Bartscha_dawne_Gora_Igliczna_osada_118501.jpg"
+         alt="Gospodarstwo Bartscha"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_10100009-1024x662.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_10100009-1024x662.jpg"
+         alt="Igliczna 1"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_4804321-1024x637.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_4804321-1024x637.jpg"
+         alt="Igliczna 2"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_199854.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_199854.jpg"
+         alt="Igliczna 3"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/OSW_Panstwowej_Strazy_Pozarnej_dawny_Gora_Igliczna_osada_3898322-1024x647.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/OSW_Panstwowej_Strazy_Pozarnej_dawny_Gora_Igliczna_osada_3898322-1024x647.jpg"
+         alt="OSP Igliczna"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_284076.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_284076.jpg"
+         alt="Igliczna 4"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_9011858-1024x816.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Igliczna_845_m_9011858-1024x816.jpg"
+         alt="Igliczna 5"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+</div>
+
+
+<p>
+Bardzo ciekawa jest seria obrazów olejnych z początków powstawania sanktuarium (na jednym widać nawet drewnianą kapliczkę – poprzedniczkę murowanego obiektu). Zresztą zasoby fotograficzne zarówno samego 
+<a href="https://polska-org.pl/517710,Gora_Igliczna_osada,Sanktuarium_Maria_Sniezna.html" target="_blank">sanktuarium Matki Bożej</a> 
+jak i 
+<a href="https://polska-org.pl/539448,Igliczna_845_m.html" target="_blank">góry Iglicznej</a> 
+są bardzo liczne i zdecydowanie warto poświęcić im chwilkę.
+</p>
+
+<!-- Galeria Sanktuarium Maria Śnieżna -->
+<div style="text-align:center; margin:20px 0; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803704-1024x674.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803704-1024x674.jpg"
+         alt="Sanktuarium 1"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803699-1024x455.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803699-1024x455.jpg"
+         alt="Sanktuarium 2"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803685-1024x452.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803685-1024x452.jpg"
+         alt="Sanktuarium 3"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+  <a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803660-1024x681.jpg" target="_blank">
+    <img src="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/Sanktuarium_Maria_Sniezna_Gora_Igliczna_osada_4803660-1024x681.jpg"
+         alt="Sanktuarium 4"
+         style="width:260px; max-width:100%; border-radius:6px; box-shadow:0 3px 6px rgba(0,0,0,0.2);">
+  </a>
+
+</div>
+
+<p>
+Więcej o sanktuarium i szczycie Iglicznej w 
+<a href="https://sp43.edu.wroclaw.pl/wp-content/uploads/sites/5/2026/01/ziemia-klodzka-strony.pdf" target="_blank">
+artykule Doroty Kędzi
+</a> 
+z periodyku 
+<a href="https://www.przewodnicy.klodzko.pl/wp/wp-content/uploads/223.pdf" target="_blank">
+„Ziemia Kłodzka” z 2013 r.</a>
+</p>
+
+<p>
+Zasieki, kamery i wilcze doły, które otaczają kościół to dziedzictwo, jakie pozostawił po sobie poprzedni rektor sanktuarium, ks. Andrzej A., skazany w 2018 r. za naruszenie nietykalności osobistej pewnego pielgrzyma. Ksiądz Andrzej wspaniałomyślnie zrzekł się urzędu rektorskiego oraz honorowego obywatelstwa Bystrzycy Kł. w roku 2021.
+
+<a href="https://www.polsatnews.pl/wiadomosc/2018-02-07/ksiadz-skazany-za-porazenie-paralizatorem-turysty-ktory-wszedl-z-psem-na-teren-sanktuarium/" target="_blank">
+O aferze z paralizatorem pewnie słyszeliście.
+</a>
+</p>
+
+
+
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr style="border:0; height:4px; background-color:#004aad; margin:20px 0;">
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SOBOTA -->
+    <div class="accordion">
+      <div class="accordion-header">Sobota</div>
+      <div class="accordion-content">
+        <div class="accordion-content-inner">
+          <!-- TU WSTAWIASZ FRAGMENTY DOTYCZĄCE SOBOTY -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(header=>{
+  header.addEventListener("click",()=>{
+    const content = header.nextElementSibling;
+    if(content.style.maxHeight){
+      content.style.maxHeight=null;
+    }else{
+      document.querySelectorAll(".accordion-content").forEach(c=>{
+        c.style.maxHeight=null;
+      });
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+<!-- ACCORDION END -->
