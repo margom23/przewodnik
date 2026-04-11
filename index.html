@@ -3304,9 +3304,10 @@ warto obejrzeć dawne zdjęcia tego obiektu, ponieważ park dziś już nie istni
 <br><br>
 <p>
 Międzygórze to także dwa kościoły. Starszy, katolicki, leżący niżej to 
-<a href="https://polska-org.pl/543386,Miedzygorze,Kosciol_sw_Jozefa.html" target="_blank">kościół św. Józefa</a>. Wzniesiony w latach 1740-1742 zapewne w miejscu wcześniejszego, 
-    jako przykład dawnej drewnianej architektury sudeckiej. 
-    Należy do bardzo wąskiego grona czterech zachowanych drewnianych świątyń w regionie, obok obiektów w Kamieńczyku, 
+<a href="https://polska-org.pl/543386,Miedzygorze,Kosciol_sw_Jozefa.html" target="_blank">kościół św. Józefa</a>. 
+    Wzniesiony w latach 1740-1742, zapewne w miejscu wcześniejszego, 
+    to rzadki przykład dawnej drewnianej, sakralnej architektury sudeckiej. 
+    Należy do wąskiego grona czterech zachowanych drewnianych świątyń w regionie, obok obiektów w Kamieńczyku, 
     Nowej Bystrzycy i Zalesiu. Przez długi czas wyróżniał się także pokryciem dachu łupkiem, co było rzadkością wśród drewnianych kościołów w Sudetach. 
 Był restaurowany w 1926 r. i remontowany w 2000 r. To drewniany budynek o konstrukcji zrębowej na 
     planie prostokąta z prezbiterium zamkniętym trójbocznie i towarzyszącymi mu symetrycznymi zakrystią i kruchtą. 
@@ -3316,6 +3317,75 @@ Był restaurowany w 1926 r. i remontowany w 2000 r. To drewniany budynek o konst
     Wykonywane były najczęściej z żeliwa i zdobione bogatymi ornamentami, inskrypcjami oraz symboliką religijną.
 </p>
 <br>
+
+Spójrz teraz na porównianie dwóch fotografii wykonanych z miejsca, w którym właśnie stoimy - sprzed kościoła św. Józefa. Jedna pochodzi z 1932 r., druga to widok
+                współczesny. Jak niewiele się tu zmieniło.
+                
+<div class="gallery-modular" id="gallery212" style="display:flex; justify-content:flex-start; gap:10px; flex-wrap:wrap; margin:20px 0;">
+  <img src="https://raw.githubusercontent.com/margom23/przewodnik/refs/heads/main/zdjecia/668848242_1250835307252102_3136950783939883587_n.jpg" class="thumb-img" data-index="0">
+</div>
+
+<div class="lightbox-modular" id="lb212" style="
+  display:none;
+  position:fixed; top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(0,0,0,0.9);
+  z-index:9999;
+  text-align:center;
+">
+  <span class="lb-close" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+  <img class="lb-img" style="max-width:90%; max-height:90%; margin-top:5%; border-radius:6px;">
+</div>
+
+<script>
+(function(){
+  const gallery = document.getElementById('gallery212');
+  const lb = document.getElementById('lb212');
+
+  const images = Array.from(gallery.querySelectorAll('.thumb-img')).map(img => img.src);
+  const lbImg = lb.querySelector('.lb-img');
+
+  gallery.querySelectorAll('.thumb-img').forEach((img, index) => {
+    img.addEventListener('click', () => {
+      lbImg.src = images[index];
+      lb.style.display = 'block';
+    });
+  });
+
+  lb.querySelector('.lb-close').onclick = () => lb.style.display = 'none';
+
+  // zamykanie ESC
+  document.addEventListener('keydown', function(e){
+    if(lb.style.display === 'block' && e.key === 'Escape'){
+      lb.style.display='none';
+    }
+  });
+
+})();
+</script>
+
+<style>
+#gallery212 .thumb-img{
+  width:30%;
+  max-width:200px;
+  cursor:pointer;
+  border-radius:6px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.25);
+  transition:transform 0.3s;
+}
+#gallery212 .thumb-img:hover{
+  transform:scale(1.05);
+}
+
+@media(max-width:600px){
+  #gallery212 .thumb-img{
+    width:48%;
+    max-width:160px;
+  }
+}
+</style>
+
+      <br>          
 <p>
 Kamienny kościół położony nieco wyżej to <a href="https://polska-org.pl/533634,Miedzygorze,Kosciol_sw_Krzyza.html" target="_blank">
 dawny ewangelicki kościół św. Andrzeja, obecnie katolicki pw. 
